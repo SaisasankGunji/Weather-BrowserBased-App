@@ -1,0 +1,77 @@
+body{
+    height:100vh;
+    width:100vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /* text-align: center; */
+    padding: 30px;
+    border-radius: 30px;
+}
+.weather-card{
+    background-image:linear-gradient(180deg,rgba(8, 153, 249, 0.715),rgba(234, 155, 7, 0.906));
+    max-width: 500px;
+    min-width: 300px;
+    box-shadow: 3.5px 3.5px 8px black;
+}
+#cityName{
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border:none;
+    border-radius: 6px;
+    padding:5px;
+}
+#getWeatherBtn{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    background-color: rgb(9, 152, 50);
+    transition: background-color .6s ease-in-out;
+    color:white;
+}
+#getWeatherBtn:hover{
+    background-color: rgb(9, 185, 59);   
+}
+.weather-card pre{
+    font-size: 16px;
+    font-weight: 900;
+    /* color:whitesmoke */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.morning-background {
+    background: linear-gradient(to bottom, #ffdb58, #ffefd5);
+    color: #333; /* Text color for morning */
+}
+
+/* Night theme */
+.night-background {
+    background: linear-gradient(to bottom, #2c3e50, #000000);
+    color: #ffffff; /* Text color for night */
+}
+#errorMsg{
+    visibility: hidden;
+    font-weight: 800;
+    margin-top: 15px;
+    /* margin: 0; */
+    margin-bottom: 0;
+    text-align: center;
+    transform: scale(1.2);
+}
+#weatherEmoji{
+    /* font-size: 2rem; */
+    margin: 0;
+}
+.inline-container-styling{
+    font-weight: bolder;
+    margin-left: 10px;
+    color:#000000
+}
